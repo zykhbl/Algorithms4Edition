@@ -41,19 +41,20 @@ struct string* itostr_10(int n) {
     return str;
 }
 
-struct string * ex_1_1_16(int n) {
+/*
+ ex_1_1_16里使用了两个malloc系统调用（第84，85行），比ex_1_1_16_fast（第175行）多了一次malloc，虽然少了两次strlen的循环，但时间反而不如ex_1_1_16_fast快，内存占用也大一些
+ */
+struct string* ex_1_1_16(int n) {
+    if (n <= 0) return NULL;
+    
     static struct string **itoa = NULL;
     static struct string **ff = NULL;
     if (itoa == NULL) {
         itoa = malloc((n + 1) * sizeof(struct string*));
-        memset(itoa, 0, (n + 1) * sizeof(struct string*));
     }
     if (ff == NULL) {
         ff = malloc((n + 1) * sizeof(struct string*));
-        memset(ff, 0, (n + 1) * sizeof(struct string*));
     }
-    
-    if (n <= 0) return NULL;
     
     if (*(ff + n - 3) == NULL) {
         *(ff + n - 3) = ex_1_1_16(n - 3);
@@ -134,6 +135,8 @@ char* itoa_10(int n) {
 }
 
 char* ex_1_1_16_fast(int n) {
+    if (n <= 0) return NULL;
+    
     static char **itoa = NULL;
     static char **ff = NULL;
     
@@ -143,8 +146,6 @@ char* ex_1_1_16_fast(int n) {
     if (ff == NULL) {
         ff = malloc((n + 1) * sizeof(char*));
     }
-    
-    if (n <= 0) return NULL;
     
     if (*(ff + n - 3) == NULL) {
         *(ff + n - 3) = ex_1_1_16_fast(n - 3);
@@ -251,12 +252,9 @@ char* ex_1_1_16_slow(int n) {
 int test_ex_1_1_16(int argc, const char * argv[]) {
 //    char *s = ex_1_1_16_fast(71);
 //    printf("%s\n", s);
-//    free(s);
     
-    struct string *str = ex_1_1_16(6);
+    struct string *str = ex_1_1_16(71);
     printf("%s\n", str->s);
-    free(str->s);
-    free(str);
     
     return 0;
 }

@@ -12,6 +12,8 @@
 		B714FA4F1BEB796400915327 /* Ex_1_1_07.c in Sources */ = {isa = PBXBuildFile; fileRef = B714FA4E1BEB796400915327 /* Ex_1_1_07.c */; };
 		B714FA521BEB7C7B00915327 /* Ex_1_1_16.c in Sources */ = {isa = PBXBuildFile; fileRef = B714FA511BEB7C7B00915327 /* Ex_1_1_16.c */; };
 		B72D4D331BEB9D5800222A31 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = B72D4D321BEB9D5800222A31 /* main.c */; };
+		B72EACFA1BF09A5E008AB6FA /* Ex_1_1_12.c in Sources */ = {isa = PBXBuildFile; fileRef = B72EACF91BF09A5E008AB6FA /* Ex_1_1_12.c */; };
+		B72EACFC1BF09C33008AB6FA /* Ex_1_1_13.c in Sources */ = {isa = PBXBuildFile; fileRef = B72EACFB1BF09C33008AB6FA /* Ex_1_1_13.c */; };
 		B76A99F01BEC789C00882D65 /* Ex_1_1_09.c in Sources */ = {isa = PBXBuildFile; fileRef = B76A99EF1BEC789C00882D65 /* Ex_1_1_09.c */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +38,8 @@
 		B714FA4E1BEB796400915327 /* Ex_1_1_07.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Ex_1_1_07.c; sourceTree = "<group>"; };
 		B714FA511BEB7C7B00915327 /* Ex_1_1_16.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Ex_1_1_16.c; sourceTree = "<group>"; };
 		B72D4D321BEB9D5800222A31 /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		B72EACF91BF09A5E008AB6FA /* Ex_1_1_12.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Ex_1_1_12.c; sourceTree = "<group>"; };
+		B72EACFB1BF09C33008AB6FA /* Ex_1_1_13.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Ex_1_1_13.c; sourceTree = "<group>"; };
 		B76A99EF1BEC789C00882D65 /* Ex_1_1_09.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Ex_1_1_09.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -91,6 +95,8 @@
 				B714FA481BEB77C100915327 /* Ex_1_1_06.c */,
 				B714FA4E1BEB796400915327 /* Ex_1_1_07.c */,
 				B76A99EF1BEC789C00882D65 /* Ex_1_1_09.c */,
+				B72EACF91BF09A5E008AB6FA /* Ex_1_1_12.c */,
+				B72EACFB1BF09C33008AB6FA /* Ex_1_1_13.c */,
 				B714FA511BEB7C7B00915327 /* Ex_1_1_16.c */,
 			);
 			path = "1.1基础编程模型";
@@ -148,7 +154,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B72D4D331BEB9D5800222A31 /* main.c in Sources */,
+				B72EACFA1BF09A5E008AB6FA /* Ex_1_1_12.c in Sources */,
 				B714FA4F1BEB796400915327 /* Ex_1_1_07.c in Sources */,
+				B72EACFC1BF09C33008AB6FA /* Ex_1_1_13.c in Sources */,
 				B714FA491BEB77C100915327 /* Ex_1_1_06.c in Sources */,
 				B76A99F01BEC789C00882D65 /* Ex_1_1_09.c in Sources */,
 				B714FA521BEB7C7B00915327 /* Ex_1_1_16.c in Sources */,
