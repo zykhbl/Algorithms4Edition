@@ -14,7 +14,10 @@
 		B72D4D331BEB9D5800222A31 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = B72D4D321BEB9D5800222A31 /* main.c */; };
 		B72EACFA1BF09A5E008AB6FA /* Ex_1_1_12.c in Sources */ = {isa = PBXBuildFile; fileRef = B72EACF91BF09A5E008AB6FA /* Ex_1_1_12.c */; };
 		B72EACFC1BF09C33008AB6FA /* Ex_1_1_13.c in Sources */ = {isa = PBXBuildFile; fileRef = B72EACFB1BF09C33008AB6FA /* Ex_1_1_13.c */; };
+		B758C2A51BF0FCCE009C1915 /* Ex_1_1_14.c in Sources */ = {isa = PBXBuildFile; fileRef = B758C2A41BF0FCCE009C1915 /* Ex_1_1_14.c */; };
+		B758C2A71BF1007B009C1915 /* Ex_1_1_15.c in Sources */ = {isa = PBXBuildFile; fileRef = B758C2A61BF1007B009C1915 /* Ex_1_1_15.c */; };
 		B76A99F01BEC789C00882D65 /* Ex_1_1_09.c in Sources */ = {isa = PBXBuildFile; fileRef = B76A99EF1BEC789C00882D65 /* Ex_1_1_09.c */; };
+		B7E4990C1BF104D80090D5DB /* Ex_1_1_17.c in Sources */ = {isa = PBXBuildFile; fileRef = B7E4990B1BF104D80090D5DB /* Ex_1_1_17.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -40,7 +43,10 @@
 		B72D4D321BEB9D5800222A31 /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		B72EACF91BF09A5E008AB6FA /* Ex_1_1_12.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Ex_1_1_12.c; sourceTree = "<group>"; };
 		B72EACFB1BF09C33008AB6FA /* Ex_1_1_13.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Ex_1_1_13.c; sourceTree = "<group>"; };
+		B758C2A41BF0FCCE009C1915 /* Ex_1_1_14.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Ex_1_1_14.c; sourceTree = "<group>"; };
+		B758C2A61BF1007B009C1915 /* Ex_1_1_15.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Ex_1_1_15.c; sourceTree = "<group>"; };
 		B76A99EF1BEC789C00882D65 /* Ex_1_1_09.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Ex_1_1_09.c; sourceTree = "<group>"; };
+		B7E4990B1BF104D80090D5DB /* Ex_1_1_17.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Ex_1_1_17.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,7 +103,10 @@
 				B76A99EF1BEC789C00882D65 /* Ex_1_1_09.c */,
 				B72EACF91BF09A5E008AB6FA /* Ex_1_1_12.c */,
 				B72EACFB1BF09C33008AB6FA /* Ex_1_1_13.c */,
+				B758C2A41BF0FCCE009C1915 /* Ex_1_1_14.c */,
+				B758C2A61BF1007B009C1915 /* Ex_1_1_15.c */,
 				B714FA511BEB7C7B00915327 /* Ex_1_1_16.c */,
+				B7E4990B1BF104D80090D5DB /* Ex_1_1_17.c */,
 			);
 			path = "1.1基础编程模型";
 			sourceTree = "<group>";
@@ -157,8 +166,11 @@
 				B72EACFA1BF09A5E008AB6FA /* Ex_1_1_12.c in Sources */,
 				B714FA4F1BEB796400915327 /* Ex_1_1_07.c in Sources */,
 				B72EACFC1BF09C33008AB6FA /* Ex_1_1_13.c in Sources */,
+				B758C2A71BF1007B009C1915 /* Ex_1_1_15.c in Sources */,
 				B714FA491BEB77C100915327 /* Ex_1_1_06.c in Sources */,
+				B758C2A51BF0FCCE009C1915 /* Ex_1_1_14.c in Sources */,
 				B76A99F01BEC789C00882D65 /* Ex_1_1_09.c in Sources */,
+				B7E4990C1BF104D80090D5DB /* Ex_1_1_17.c in Sources */,
 				B714FA521BEB7C7B00915327 /* Ex_1_1_16.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

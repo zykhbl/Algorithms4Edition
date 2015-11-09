@@ -14,6 +14,9 @@ int test_ex_1_1_07(int argc, const char * argv[]);
 int test_ex_1_1_09(int argc, const char * argv[]);
 int test_ex_1_1_12(int argc, const char * argv[]);
 int test_ex_1_1_13(int argc, const char * argv[]);
+int test_ex_1_1_14(int argc, const char * argv[]);
+int test_ex_1_1_15(int argc, const char * argv[]);
 int test_ex_1_1_16(int argc, const char * argv[]);
+int test_ex_1_1_17(int argc, const char * argv[]);
 
 #endif
