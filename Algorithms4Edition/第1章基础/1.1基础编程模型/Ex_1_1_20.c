@@ -57,6 +57,10 @@ int lg(long double d) {
 /*
  因为ln(xy) = ln(x) + ln(y)，所以ln(n) = ln((2^[lg(n)]) * n / (2^[lg(n)])) = ln((2^[lg(n)]) + ln(n / (2^[lg(n)])) = [lg(n)] * ln2 + ln(n / (2^[lg(n)]));
  */
+
+/*
+ ?? 把n分解成所有素数的乘积，然后求ln(primt)，并用数组保存起来，可能会更快 ??
+ */
 long double ln_n(int n) {
     int lg_max = lg(n);
     long double ex = powl(2.0, lg_max);
@@ -97,7 +101,7 @@ long double ln_n_1(int n) {
 }
 
 int test_ex_1_1_20(int argc, const char * argv[]) {
-    int n = 100000;
+    int n = 1000000;
     
 //    printf("ln_n(%d) = %.10Lf \n", n, ln_n(n));
 //    printf("%d = %.10Lf \n", n, powl(M_E, ln_n(n)));
