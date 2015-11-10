@@ -9,6 +9,6 @@
 #include "Test_ex_1_1.h"
 
 int main(int argc, const char * argv[]) {
-    return test_ex_1_1_17(argc, argv);
+    return test_ex_1_1_20(argc, argv);
 }
 

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B7121ED11BF1CE7E00BCC19D /* Ex_1_1_19.c in Sources */ = {isa = PBXBuildFile; fileRef = B7121ED01BF1CE7E00BCC19D /* Ex_1_1_19.c */; };
+		B7121ED31BF1D85900BCC19D /* Ex_1_1_20.c in Sources */ = {isa = PBXBuildFile; fileRef = B7121ED21BF1D85900BCC19D /* Ex_1_1_20.c */; };
 		B714FA401BEB775100915327 /* Algorithms4Edition.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = B714FA3F1BEB775100915327 /* Algorithms4Edition.1 */; };
 		B714FA491BEB77C100915327 /* Ex_1_1_06.c in Sources */ = {isa = PBXBuildFile; fileRef = B714FA481BEB77C100915327 /* Ex_1_1_06.c */; };
 		B714FA4F1BEB796400915327 /* Ex_1_1_07.c in Sources */ = {isa = PBXBuildFile; fileRef = B714FA4E1BEB796400915327 /* Ex_1_1_07.c */; };
@@ -17,7 +19,7 @@
 		B758C2A51BF0FCCE009C1915 /* Ex_1_1_14.c in Sources */ = {isa = PBXBuildFile; fileRef = B758C2A41BF0FCCE009C1915 /* Ex_1_1_14.c */; };
 		B758C2A71BF1007B009C1915 /* Ex_1_1_15.c in Sources */ = {isa = PBXBuildFile; fileRef = B758C2A61BF1007B009C1915 /* Ex_1_1_15.c */; };
 		B76A99F01BEC789C00882D65 /* Ex_1_1_09.c in Sources */ = {isa = PBXBuildFile; fileRef = B76A99EF1BEC789C00882D65 /* Ex_1_1_09.c */; };
-		B7E4990C1BF104D80090D5DB /* Ex_1_1_17.c in Sources */ = {isa = PBXBuildFile; fileRef = B7E4990B1BF104D80090D5DB /* Ex_1_1_17.c */; };
+		B7E4990C1BF104D80090D5DB /* Ex_1_1_18.c in Sources */ = {isa = PBXBuildFile; fileRef = B7E4990B1BF104D80090D5DB /* Ex_1_1_18.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,6 +36,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B7121ED01BF1CE7E00BCC19D /* Ex_1_1_19.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Ex_1_1_19.c; sourceTree = "<group>"; };
+		B7121ED21BF1D85900BCC19D /* Ex_1_1_20.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Ex_1_1_20.c; sourceTree = "<group>"; };
 		B714FA3A1BEB775100915327 /* Algorithms4Edition */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Algorithms4Edition; sourceTree = BUILT_PRODUCTS_DIR; };
 		B714FA3F1BEB775100915327 /* Algorithms4Edition.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Algorithms4Edition.1; sourceTree = "<group>"; };
 		B714FA481BEB77C100915327 /* Ex_1_1_06.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Ex_1_1_06.c; sourceTree = "<group>"; };
@@ -46,7 +50,7 @@
 		B758C2A41BF0FCCE009C1915 /* Ex_1_1_14.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Ex_1_1_14.c; sourceTree = "<group>"; };
 		B758C2A61BF1007B009C1915 /* Ex_1_1_15.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Ex_1_1_15.c; sourceTree = "<group>"; };
 		B76A99EF1BEC789C00882D65 /* Ex_1_1_09.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Ex_1_1_09.c; sourceTree = "<group>"; };
-		B7E4990B1BF104D80090D5DB /* Ex_1_1_17.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Ex_1_1_17.c; sourceTree = "<group>"; };
+		B7E4990B1BF104D80090D5DB /* Ex_1_1_18.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Ex_1_1_18.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,7 +110,9 @@
 				B758C2A41BF0FCCE009C1915 /* Ex_1_1_14.c */,
 				B758C2A61BF1007B009C1915 /* Ex_1_1_15.c */,
 				B714FA511BEB7C7B00915327 /* Ex_1_1_16.c */,
-				B7E4990B1BF104D80090D5DB /* Ex_1_1_17.c */,
+				B7E4990B1BF104D80090D5DB /* Ex_1_1_18.c */,
+				B7121ED01BF1CE7E00BCC19D /* Ex_1_1_19.c */,
+				B7121ED21BF1D85900BCC19D /* Ex_1_1_20.c */,
 			);
 			path = "1.1基础编程模型";
 			sourceTree = "<group>";
@@ -169,8 +175,10 @@
 				B758C2A71BF1007B009C1915 /* Ex_1_1_15.c in Sources */,
 				B714FA491BEB77C100915327 /* Ex_1_1_06.c in Sources */,
 				B758C2A51BF0FCCE009C1915 /* Ex_1_1_14.c in Sources */,
+				B7121ED11BF1CE7E00BCC19D /* Ex_1_1_19.c in Sources */,
 				B76A99F01BEC789C00882D65 /* Ex_1_1_09.c in Sources */,
-				B7E4990C1BF104D80090D5DB /* Ex_1_1_17.c in Sources */,
+				B7E4990C1BF104D80090D5DB /* Ex_1_1_18.c in Sources */,
+				B7121ED31BF1D85900BCC19D /* Ex_1_1_20.c in Sources */,
 				B714FA521BEB7C7B00915327 /* Ex_1_1_16.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
