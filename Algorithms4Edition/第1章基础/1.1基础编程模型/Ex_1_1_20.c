@@ -10,9 +10,11 @@
 #include <stdlib.h>
 #include <math.h>
 
+static int K = 10000;
+
 /*
  lnx求值原理：
- x->0.0时，ln(1+x)=x-x^2/2+x^3/3-……+(-1)^(k-1)*(x^k)/k收敛得越快，所以k不大时就可以近似于ln(1+x)
+ x->0.0时，泰勒公式展开：ln(1+x)=x-x^2/2+x^3/3-……+(-1)^(k-1)*(x^k)/k 收敛得越快，所以k不大时就可以近似于ln(1+x)
  */
 
 //递归版本
@@ -41,34 +43,26 @@ long double lnx(long double x, int k) {
     return sum;
 }
 
-int loge(int n) {
+/*
+ 求不大于lg(d)的最大整数[lg(d)]
+ */
+int lg(long double d) {
     int ex = 0;
-    while ((n /= M_E) >= 1) {
+    while ((d /= 2.0) >= 1.0) {
         ex++;
     }
     return ex;
 }
 
 /*
- 因为ln(xy) = ln(x) + ln(y)，所以ln(n) = ln((e^[lnn]) * n / (e^[lnn])) = ln(e^[lnn]) + ln(n / (e^[lnn])) = [lnn] + ln(n / (e^[lnn]));
+ 因为ln(xy) = ln(x) + ln(y)，所以ln(n) = ln((2^[lg(n)]) * n / (2^[lg(n)])) = ln((2^[lg(n)]) + ln(n / (2^[lg(n)])) = [lg(n)] * ln2 + ln(n / (2^[lg(n)]));
  */
-long double ln_n(int n, int k) {
-    int max_ex = loge(n);
-    long double ex = powl(M_E, max_ex);
+long double ln_n(int n) {
+    int lg_max = lg(n);
+    long double ex = powl(2.0, lg_max);
     long double x = n / ex;
     
-    if (x <= 0.0) {
-        printf("+++++++++++\n");
-        exit(-1);
-    } else if (x < 2.0) {
-        return max_ex + lnx(x, k);
-    } else {
-        x = x / 2.0;
-        if (x >= 2.0) {
-            exit(-2);
-        }
-        return max_ex + M_LN2 + lnx(x, k);
-    }
+    return lg_max * M_LN2 + lnx(x, K);
 }
 
 /*
@@ -77,7 +71,7 @@ long double ln_n(int n, int k) {
  */
 
 //递归版本，对于n > 100000时，会计算不出来，因为函数调用出栈入栈耗光了栈内存
-//long double ln_n_1(int n, int k) {
+//long double ln_n_1(int n) {
 //    if (n == 1) {
 //        return 0.0;
 //    }
@@ -86,24 +80,28 @@ long double ln_n(int n, int k) {
 //        return M_LN2;
 //    }
 //    
-//    return ln_n(n, k) + ln_n_1(n - 1, k);
+//    return ln_n(n) + ln_n_1(n - 1);
 //}
 
 //非递归版本，对于n没限制
-long double ln_n_1(int n, int k) {
+long double ln_n_1(int n) {
+    if (n == 1) {
+        return 0.0;
+    }
+    
     long double sum = M_LN2;
     for (int i = 3; i <= n; i++) {
-        sum += ln_n(i, k);
+        sum += ln_n(i);
     }
     return sum;
 }
 
 int test_ex_1_1_20(int argc, const char * argv[]) {
-    int n = 1000000, k = 100;
+    int n = 100000;
     
-//    printf("ln_n(%d) = %.10Lf \n", n, ln_n(n, k));
-//    printf("%d = %.10Lf \n", n, powl(M_E, ln_n(n, k)));
-    printf("ln_n_1(%d!) = %.10Lf\n", n, ln_n_1(n, k));
+//    printf("ln_n(%d) = %.10Lf \n", n, ln_n(n));
+//    printf("%d = %.10Lf \n", n, powl(M_E, ln_n(n)));
+    printf("ln_n_1(%d!) = %.10Lf\n", n, ln_n_1(n));
     
     return 0;
 }
